@@ -121,3 +121,103 @@ header p {
     outline: 2px solid var(--color-accent);
     outline-offset: 3px;
 }
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.releases-section {
+    margin-bottom: 50px;
+}
+
+.releases-section h2 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0 0 25px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--color-accent);
+    letter-spacing: 1px;
+}
+
+.releases-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.release-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 260px;
+    background-color: var(--color-white);
+    border-radius: 16px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(83, 26, 94, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.release-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 45px rgba(195, 58, 237, 0.35);
+}
+
+.release-cover {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.release-info {
+    padding: 18px 20px 22px;
+}
+
+.release-info h3 {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--color-primary);
+    margin: 0 0 6px;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+}
+
+.release-type {
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--color-accent);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+.release-meta {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: #6a5080;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.release-type {
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-accent);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0 0 6px;
+}
+
+.release-meta {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: #6a5080;
+    margin: 0;
+}
