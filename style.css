@@ -7,3 +7,117 @@
     --font-heading: 'Yeseva One', serif;
     --font-body: 'Montserrat', Arial, sans-serif;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    background: linear-gradient(135deg, #f8c3ff 0%, #d693df 50%, #c781d0 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: var(--color-text);
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url('images/fon.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--color-white);
+    text-align: center;
+    padding: 50px 20px 30px;
+    position: relative;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(31, 1, 37, 0.55) 0%, rgba(83, 26, 94, 0.45) 100%);
+    z-index: 0;
+}
+
+header > * {
+    position: relative;
+    z-index: 1;
+}
+
+header .avatar {
+    display: block;
+    margin: 0 auto 15px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 5px solid var(--color-white);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    font-size: 60px;
+    font-weight: 400;
+    margin: 0 0 8px;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    text-shadow: 3px 5px 25px rgba(0, 0, 0, 0.75);
+}
+
+header p {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    opacity: 0.95;
+    margin: 0 0 25px;
+    text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.main-nav a {
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 10px 22px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(195, 58, 237, 0.5);
+}
+
+.main-nav a:active {
+    transform: translateY(0) scale(0.96);
+}
+
+.main-nav a:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+}
