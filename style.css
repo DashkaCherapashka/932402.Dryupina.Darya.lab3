@@ -1,0 +1,9 @@
+:root {
+    --color-primary: #531a5e;
+    --color-accent: #c33aed;
+    --color-text: #321a3d;
+    --color-light: #f4e1ff;
+    --color-white: #ffffff;
+    --font-heading: 'Yeseva One', serif;
+    --font-body: 'Montserrat', Arial, sans-serif;
+}
