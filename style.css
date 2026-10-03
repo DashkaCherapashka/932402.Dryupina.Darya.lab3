@@ -405,3 +405,82 @@ footer p {
     opacity: 0.95;
 }
 
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 46px;
+    }
+
+    .release-card {
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    .gear-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+}
+
+@media (max-width: 640px) {
+    header {
+        padding: 35px 15px 25px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    header p {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    header .avatar {
+        width: 110px;
+        height: 110px;
+    }
+
+    .main-nav {
+        gap: 8px;
+    }
+
+    .main-nav a {
+        font-size: 11px;
+        padding: 8px 16px;
+        letter-spacing: 1px;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    .releases-section h2,
+    .gear-section h2,
+    .contact-section h2 {
+        font-size: 26px;
+    }
+
+    .release-card {
+        flex: 1 1 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .release-cover {
+        width: 100%;
+        height: 180px;
+    }
+
+    .gear-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .contact-form {
+        padding: 25px 20px;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
+
