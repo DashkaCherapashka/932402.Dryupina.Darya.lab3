@@ -353,54 +353,58 @@ section ol li:hover::before {
 }
 
 aside {
-    flex: 0 0 300px;
+    flex: 0 0 320px;
     background: linear-gradient(135deg, var(--color-light) 0%, #eac9ff 100%);
     border: 2px dashed var(--color-primary);
     border-radius: 16px;
-    padding: 25px 28px;
+    padding: 30px 30px;
     box-shadow: 0 8px 30px rgba(195, 58, 237, 0.15);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 18px;
     animation: fadeInUp 1s ease-out 0.3s both;
 }
 
 aside h2 {
     font-family: var(--font-heading);
     color: var(--color-primary);
-    font-size: 26px;
-    margin: 0;
+    font-size: 30px;
+    margin: 0 0 25px;
     letter-spacing: 1px;
-    line-height: 1.2;
+    line-height: 1.25;
 }
 
 aside h3 {
     font-family: var(--font-body);
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     color: var(--color-accent);
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin: 0 0 8px;
+    margin: 25px 0 12px;
+}
+
+aside h3:first-of-type {
+    margin-top: 0;
+}
+
+aside ul:last-child {
+    flex: 1;
 }
 
 .aside-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
 }
 
 .aside-list li {
     font-family: var(--font-body);
-    font-size: 14px;
+    font-size: 13px;
     color: var(--color-primary);
-    padding: 2px 0 2px 22px;
+    padding: 1px 0 6px 24px;
     position: relative;
-    line-height: 1.45;
+    line-height: 1.5;
 }
 
 .aside-list li::before {
@@ -410,14 +414,14 @@ aside h3 {
     top: 50%;
     transform: translateY(-50%);
     color: var(--color-accent);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .aside-list--heart li::before {
     content: "♥";
     color: var(--color-primary);
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .aside-links {
@@ -426,7 +430,7 @@ aside h3 {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
 }
 
 .aside-links li {
@@ -437,10 +441,10 @@ aside h3 {
 .aside-links a {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 8px 14px;
+    gap: 12px;
+    padding: 10px 16px;
     font-family: var(--font-body);
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     color: var(--color-primary);
     text-decoration: none;
@@ -492,11 +496,11 @@ aside h3 {
 
 .aside-list .no-marker {
     padding-left: 0;
-    margin-top: 6px;
+    margin-top: 14px;
     font-style: italic;
     color: var(--color-accent);
     font-weight: 600;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .aside-list .no-marker::before {
@@ -509,16 +513,16 @@ aside h3 {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 8px;
 }
 
 .aside-tags li {
     font-family: var(--font-body);
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     color: var(--color-white);
     background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
-    padding: 5px 14px;
+    padding: 7px 16px;
     border-radius: 20px;
     letter-spacing: 0.5px;
     box-shadow: 0 2px 8px rgba(83, 26, 94, 0.25);
